@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color:  #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">Dom learning on chai aur code<span style="display: none;">test text</span></h1>
+        <!-- title.textContent example -->
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="listItem">one</li>
+            <li class="listItem">two</li>
+            <li class="listItem">three</li>
+            <li class="listItem">four</li>
+        </ul>
+        <!-- ul>li*3 -->
+<!--    document.getElementsByClassName('listItem')
+        const temp = document.getElementsByClassName('listItem')
+        temp
+        HTMLCollection(4) [li.listItem, li.listItem, li.listItem, li.listItem]
+        Array.from(temp)  to convert this classList into array
+        (4) [li.listItem, li.listItem, li.listItem, li.listItem] -->
+    </div> 
+</body>
+</html>
+
+<!-- To run in console of browser -->
+<!-- 
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').setAttribute('class', 'test heading')
+const title= document.getElementById('title')
+title.style.backgroundColor = 'green'
+title.style.padding= "15px"
+title.style.borderRad= "15px"
+title.style.borderRadius= "15px" 
+
+title.innerText
+title.textContent
+Use textContent for raw, fast text extraction or insertion.
+Use innerText when you need only the visible text as it would appear to the user.
+title.innerHTML
+
+document.querySelector('h1')  gives the first h1 in the file
+const myul = document.querySelector('ul')
+myul.querySelector('li')
+const turnGreen= myul.querySelector('li')
+turnGreen.innerText = 'five'
+turnGreen.style.backgroundColor = "green"
+
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]   its not array(ps. array has map), its nodeList
+const tempLiList= document.querySelectorAll('li')
+
+Use ?. (optional chaining) to avoid crashes
+If you’re not sure whether tempLiList[1] exists, you can do:
+tempLiList[1]?.style?.color = 'green';
+This won’t throw an error if it’s missing — it’ll just do nothing.
+(Though you’ll still want to check why it’s missing.)           chatgpt
+
+tempLiList.forEach(function (l) {
+    l.style.backgroundColor = 'red'    
+})   to edit all in querylist
+-->
