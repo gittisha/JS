@@ -1,7 +1,8 @@
-// let a=10
-// const b= 20
-var c = 300
+
+//{} it is scope
+var c = 300 
 let a = 300
+
 if (true){
     let a=10
     const b= 20
@@ -9,7 +10,14 @@ if (true){
     console.log("Inner: ",a)
 }
 
-//console.log(a)
+// console.log(a) //a is not defined because it is block scope and we are trying to access it outside the block
+// console.log(b) //b is not defined because it is block scope and we are trying to access it outside the block
+// console.log(c)
+//function scope
+//global scope
+//module scope
+//block scope
+
 
 //closure
 //document object model- DOM
