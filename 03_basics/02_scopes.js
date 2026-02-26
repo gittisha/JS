@@ -19,8 +19,9 @@ if (true){
 //block scope
 
 
-//closure
-//document object model- DOM
+//closure - a closure is a function that has access to its own scope, the outer function's scope, and the global scope.
+//document object model- DOM (how html can be manipulated using js)
+
 
 function one(){
     const username = "Tisha"
@@ -31,7 +32,7 @@ function one(){
     }
     //console.log(website);
 
-    //two()
+    two()
 }
 one()
 
@@ -41,18 +42,19 @@ if(true){
         const website = "Youtube"
         console.log(username + website)
     }
-    //console.log(website)
+    //console.log(website) //website is not defined because it is block scope and we are trying to access it outside the block
 }
-// console.log(username)
+// console.log(username) //same reason as above
 
 // +++++++++++++++++++++++++++ interesting +++++++++++++++++++++++++++
-console.log(addOne(5))
-
+console.log(addOne(5))//addOne is a function declaration, which is hoisted to the top of its scope.
+// This means that you can call addOne before its actual declaration in the code, and it will work correctly.
 function addOne(num){
     return num+1
 }
 
-addTwo(5)
-const addTwo = function(num){ //its a function but also known as expression
+const addTwo = function(num){ //addTwo--- its a function but also known as expression
     return num+2
 }
+
+addTwo(5)
