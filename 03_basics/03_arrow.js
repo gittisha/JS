@@ -39,9 +39,10 @@ user.welcomeMessage()
 }
 cha()
 
-// const addTwo = (num1, num2) => {
+// const addTwo = (num1, num2) => { //exlicit return
 //     return num1 + num2
 // }
-const addTwo = (num1, num2) => num1 + num2 //implicit return-> when we have only one line of code in the function body, we can omit the curly braces and the return keyword. The expression will be evaluated and returned automatically.
+// const addTwo = (num1, num2) => num1 + num2 //implicit return-> when we have only one line of code in the function body, we can omit the curly braces and the return keyword. The expression will be evaluated and returned automatically.
+const addTwo = (num1, num2) => ({username: "Tisha"}) //() is used to return object
 
 console.log(addTwo(3, 5))

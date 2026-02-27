@@ -59,37 +59,39 @@ const users=[
 users[1].email
 console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
+console.log(Object.keys(tinderUser)); //Object.keys() method returns keys
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
+console.log(tinderUser.hasOwnProperty('isLoggedIn')) //is the property is present in the object 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 
 
+//----------------Destructuring of objects
 const course={
     coursename: "js in Hindi",
     price: "999",
     courseInstructor: "Hitesh"
 }
 
-const {courseInstructor : inst} = course
-
+const {courseInstructor} = course
 // console.log(courseInstructor)
+
+const {courseInstructor : inst} = course
 console.log(inst);
 
-const navbar = () => {
+//Destructuring in function parameter in react
+const navbar = ({company}) => {
     //{} means destructuring
 }
 
 //API
-//json
-// {
+//-------------json... object has name but json does not have name, json is a string
 //     "name" : "Tisha",
 //     "coursename" : "Js",
 //     "price" : "free"
 // }
 
-//APIs can be found in arrays
+//APIs can be found in array format as well
 [
     {},
     {},
@@ -98,4 +100,4 @@ const navbar = () => {
 
 
 //randomuserapi
-//json formatter
+//json formatter -> used to convert json string into object and vice versa (like xml)

@@ -53,7 +53,8 @@ function addOne(num){
     return num+1
 }
 
-addTwo(5)
 const addTwo = function(num){ //addTwo--- its a function but also known as function expression
     return num+2
 }
+
+addTwo(5)
