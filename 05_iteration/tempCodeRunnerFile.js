@@ -1,19 +1,18 @@
-const myCoding = [
+const shoppingCart = [
 //     {
-//         languageName: "javascript",
-//         languageFileName: "js"
+//         itemName: "js course",
+//         price: 2999
 //     },
 //     {
-//         languageName: "java",
-//         languageFileName: "java"
+//         itemName: "py course",
+//         price: 299
 //     },
 //     {
-//         languageName: "python",
-//         languageFileName: "py"
+//         itemName: "mobile dev course",
+//         price: 5999
 //     },
 // ]
 
-// myCoding.forEach( (item) => {
-    
-//     console.log(item.languageName);
-// } )
+// const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+
+// console.log(priceToPay)
